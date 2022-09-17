@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magician
-"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations & Read a random math-related quote.
+# BookStore
+The Bookstore is a website similar to the "Awesome Books" website built in the previous module. You will create an MVP version of it that allows you to: Display a list of books. Add a book. Remove a selected book.
 
 # Live Demo
-[Live Demo](https://startling-sopapillas-3680f4.netlify.app/)
+[Live Demo]() coming soon
 
 ## Built With
 - HTML5
@@ -23,11 +23,11 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 1. Clone the repo in your local machine:
 ```bash
-git clone https://github.com/muskan2532150/Math-Magician.git
+git clone https://github.com/muskan2532150/Bookstore.git
 ```
 2. Open terminal and cd into project and install the dependencies
 ```bash
-cd Math-Magician
+cd Bookstore
 npm install
 ```
 
@@ -55,7 +55,8 @@ Contributions, issues, and feature requests are welcome!
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- [Math Magician](https://github.com/microverseinc/curriculum-react-redux/blob/main/math-magicians/sneak_peek.md)
+- [BookStore](https://github.com/microverseinc/curriculum-react-redux/blob/main/bookstore/sneak_peek_v2_0.md)
+- Zeplin project 
 
 ## 📝 License
 
