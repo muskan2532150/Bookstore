@@ -1,17 +1,17 @@
-import { Route, Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 import './scss/main.css';
-import Header from './component/Header'
+import Header from './component/Header';
 import Books from './component/Books';
 import Category from './component/Category';
 
 function App() {
   return (
     <>
-    <Header/>
+      <Header />
       <Routes>
-        <Route path='/' element={<Books/>}/>
-        <Route path='/books' element={<Books/>}/>
-        <Route path='/category' element={<Category/>}/>
+        <Route path="/" element={<Books />} />
+        <Route path="/books" element={<Books />} />
+        <Route path="/category" element={<Category />} />
       </Routes>
     </>
   );

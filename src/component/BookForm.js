@@ -1,58 +1,33 @@
-// import React from 'react'
+import { useState } from 'react';
 
-// export default function BookForm() {
-//   return (
-//     <form onSubmit={handleForm}>
-//       <input type="text" placeholder='Book title' />
-//       <input type="text" placeholder='Author' />
-//       <select name="category">
-//         <option value="Action">Action</option>
-//         <option value="Science Fiction">Science Fiction</option>
-//         <option value="Economy">Economy</option>
-//       </select>
-//       <button type='submit' >Add book</button>
-//     </form>
-//   )
-// }
+export default function BookForm() {
+  const [input, setState] = useState({ title: '', author: '' });
+  onchange = (e) => {
+    setState({
+      [e.target.name]: e.target.value,
 
-import React, { Component } from 'react'
+    });
+  };
 
-export default class BookForm extends Component {
-  state = {
-    title:"",
-    author:'',
-  }
+  // handleForm = (e) =>{
+  //   e.preventDefault();
+  //   this.props.addbook(newbook);
+  // }
 
-  onchange =(e) =>{
-    this.setState({
-      [e.target.name]:e.target.value,
-    
-    }
-    )
-  }
-
-// handleForm = (e) =>{
-//   e.preventDefault();
-//   this.props.addbook(newbook);
-// }
-
-  render() {
-    return (
-      <div className="inputBook">
-        <hr />
+  return (
+    <div className="inputBook">
+      <hr />
       <h4>ADD NEW BOOK</h4>
       <form>
-      <input type="text" placeholder='Book title' name="title" value={this.state.title}  onChange={this.onchange} />
-      <input type="text" placeholder='Author' name='author' value={this.state.author} onChange={this.onchange} />
-      <select name="category">
-        <option value="Action">Action</option>
-        <option value="Science Fiction">Science Fiction</option>
-        <option value="Economy">Economy</option>
-      </select>
-      <button type='submit' >Add book</button>
-    </form>
-      </div>    
-    )
-  }
+        <input type="text" placeholder="Book title" name="title" value={input.title} onChange={onchange} />
+        <input type="text" placeholder="Author" name="author" value={input.author} onChange={onchange} />
+        <select name="category">
+          <option value="Action">Action</option>
+          <option value="Science Fiction">Science Fiction</option>
+          <option value="Economy">Economy</option>
+        </select>
+        <button type="submit">Add book</button>
+      </form>
+    </div>
+  );
 }
-

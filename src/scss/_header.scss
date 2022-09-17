@@ -1,31 +1,30 @@
 nav {
+  display: flex;
+  align-items: center;
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+
+  h1 {
+    color: #0290ff;
+    font-size: 3rem;
+  }
+
+  ul {
     display: flex;
-    align-items: center;
-    padding: 24px 4%;
-    background-color: #fff;
-    border-bottom: 1px solid #e8e8e8;
+    list-style: none;
+    gap: 20px;
+    width: 20%;
+    padding-left: 12px;
+    font-size: 2rem;
 
-    h1 {
-        color: #0290ff;
-        font-size: 3rem;
+    a {
+      text-decoration: none;
+      opacity: 0.5;
+
+      &:active {
+        opacity: 1;
+      }
     }
-
-    ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        width: 20%;
-        padding-left: 12px;
-        font-size: 2rem;
-
-        a {
-            text-decoration: none;
-            
-            opacity: .5;
-            
-            &:active {
-                opacity: 1;
-            }
-        }
-    }
+  }
 }

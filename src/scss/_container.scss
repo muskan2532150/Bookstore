@@ -5,9 +5,8 @@ button {
   border-radius: 3px;
   background-color: #0290ff;
   border: none;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   color: #fff;
-  font-size: .813rem;
   font-weight: 700;
   font-size: 1.2rem;
 }
@@ -27,12 +26,27 @@ button {
 
 .part1 {
   p {
-    opacity: .5;
+    opacity: 0.5;
+  }
+}
+
+.part3 {
+  p {
+    margin-bottom: 7px;
+
+    &:first-child {
+      opacity: 0.7;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    width: 44%;
   }
 }
 
 .buttons {
-  opacity: .5;
+  opacity: 0.5;
   display: flex;
   margin-top: 12px;
 
@@ -55,46 +69,31 @@ button {
 }
 
 .part2 {
-display: flex;
-justify-content: center;
-gap: 10px;
-align-items: center;
-}
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 
-.circle {
-  border: 6px solid #307bbe;
-    padding: 8%;
-    border-radius: 50%;
-    border-top-color: #cecece;
-    border-left-color: #cecece;
-    transform: rotate(-50deg);
-}
 
-.text {
-  text-align: center;
+  .text {
+    text-align: center;
 
-  p{
-    font-size: 2rem;
+    p {
+      font-size: 2rem;
 
-    &:last-child{
-      font-size: 1rem;
-      opacity: .7;
+      &:last-child {
+        font-size: 1rem;
+        opacity: 0.7;
+      }
     }
   }
 }
 
-
-.part3 {
-  p {
-margin-bottom: 7px;
-
-&:first-child {
-  opacity: .7;
-}
-  }
-
-  button {
-    margin-top: 10px;
-    width: 44%;
-  }
+.circle {
+  border: 6px solid #307bbe;
+  padding: 8%;
+  border-radius: 50%;
+  border-top-color: #cecece;
+  border-left-color: #cecece;
+  transform: rotate(-50deg);
 }
