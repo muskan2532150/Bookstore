@@ -1,0 +1,100 @@
+button {
+  cursor: pointer;
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: .5px;
+  color: #fff;
+  font-size: .813rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.container {
+  padding: 4%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.part1 {
+  p {
+    opacity: .5;
+  }
+}
+
+.buttons {
+  opacity: .5;
+  display: flex;
+  margin-top: 12px;
+
+  button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    padding-right: 7.8rem;
+    border-right: 1px solid;
+    margin-right: 1.5rem;
+    color: #121212;
+    width: 15%;
+    text-align: left;
+    text-transform: uppercase;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
+.part2 {
+display: flex;
+justify-content: center;
+gap: 10px;
+align-items: center;
+}
+
+.circle {
+  border: 6px solid #307bbe;
+    padding: 8%;
+    border-radius: 50%;
+    border-top-color: #cecece;
+    border-left-color: #cecece;
+    transform: rotate(-50deg);
+}
+
+.text {
+  text-align: center;
+
+  p{
+    font-size: 2rem;
+
+    &:last-child{
+      font-size: 1rem;
+      opacity: .7;
+    }
+  }
+}
+
+
+.part3 {
+  p {
+margin-bottom: 7px;
+
+&:first-child {
+  opacity: .7;
+}
+  }
+
+  button {
+    margin-top: 10px;
+    width: 44%;
+  }
+}

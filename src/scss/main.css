@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #121212;
+}
+
+body {
+  padding: 4%;
+  background-color: #f5f6fa;
+}
+
+#root {
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fafafa;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 24px 4%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+nav h1 {
+  color: #0290ff;
+  font-size: 3rem;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  width: 20%;
+  padding-left: 12px;
+  font-size: 2rem;
+}
+nav ul a {
+  text-decoration: none;
+  opacity: 0.5;
+}
+nav ul a:active {
+  opacity: 1;
+}
+
+button {
+  cursor: pointer;
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.container {
+  padding: 4%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.part1 p {
+  opacity: 0.5;
+}
+
+.buttons {
+  opacity: 0.5;
+  display: flex;
+  margin-top: 12px;
+}
+.buttons button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  padding-right: 7.8rem;
+  border-right: 1px solid;
+  margin-right: 1.5rem;
+  color: #121212;
+  width: 15%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.buttons button:last-child {
+  border: 0;
+}
+
+.part2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.circle {
+  border: 6px solid #307bbe;
+  padding: 8%;
+  border-radius: 50%;
+  border-top-color: #cecece;
+  border-left-color: #cecece;
+  transform: rotate(-50deg);
+}
+
+.text {
+  text-align: center;
+}
+.text p {
+  font-size: 2rem;
+}
+.text p:last-child {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.part3 p {
+  margin-bottom: 7px;
+}
+.part3 p:first-child {
+  opacity: 0.7;
+}
+.part3 button {
+  margin-top: 10px;
+  width: 44%;
+}
+
+.inputBook {
+  padding: 3% 0;
+}
+.inputBook hr {
+  margin-bottom: 3%;
+}
+.inputBook h4 {
+  opacity: 0.5;
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+.inputBook form {
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 35px;
+}
+.inputBook form input {
+  border-radius: 4px;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  width: 20%;
+  font-size: 1.2rem;
+}
+.inputBook form input::-moz-placeholder {
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
+.inputBook form input:-ms-input-placeholder {
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
+.inputBook form input::placeholder {
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
+.inputBook form select {
+  opacity: 0.8;
+  width: 20%;
+  padding: 12px;
+}
+.inputBook form select option {
+  opacity: 0.9;
+  padding: 12px;
+}/*# sourceMappingURL=main.css.map */

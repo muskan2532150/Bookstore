@@ -1,0 +1,47 @@
+.inputBook {
+    padding: 3% 0;
+
+    hr {
+        margin-bottom: 3%;
+    }
+
+    h4 {
+        opacity: .5;
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+
+    form {
+        align-items: center;
+        margin-top: 20px;
+        display: flex;
+        gap: 35px;
+
+        input {
+            border-radius: 4px;
+            padding: 12px;
+            border: 1px solid #e8e8e8;
+            background-color: #fff;
+            font-size: 1rem;
+            letter-spacing: -.15px;
+            width: 20%;
+            font-size: 1.2rem;
+
+            &::placeholder {
+                opacity: .5;
+                font-size: 1.2rem;
+            }
+        }
+
+        select {
+            opacity: .8;
+            width: 20%;
+            padding: 12px;
+
+            option {
+                opacity: .9;
+                padding: 12px;
+            }
+        }
+    }
+}
