@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
+
 //  import PropTypes from 'prop-types';
 
 // destructuring props as book using {book}
 
-const BookItem = ({ book }) => (
-  <div className="card">
+const BookItem = ({book}) => { 
+  return (
+    <div className="card">
     <div className="part1">
       <p>{book.category}</p>
       <h1>{book.title}</h1>
@@ -32,7 +34,8 @@ const BookItem = ({ book }) => (
       </button>
     </div>
   </div>
-);
+  )
+  }
 
 // validation for props book
 // BookItem.propTypes = {
