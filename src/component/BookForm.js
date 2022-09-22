@@ -3,14 +3,15 @@ import { useDispatch } from 'react-redux';
 import { addState } from '../redux/books/book';
 
 export default function BookForm() {
-  const [input, setState] = useState({ title: '', author: '' });
+  const [input, setInput] = useState({ title: '', author: '', category: '' });
 
   const dispatch = useDispatch();
 
   onchange = (e) => {
-    console.log(input.title);
-    setState({
-      [e.target.name]: e.target.value,
+    const { name, value } = e.target;
+    setInput({
+      ...input,
+      [name]: value,
     });
   };
 
@@ -20,6 +21,7 @@ export default function BookForm() {
       id: 4,
       author: input.author,
       title: input.title,
+      category: input.category,
     };
     dispatch(addState(newobj));
   };
