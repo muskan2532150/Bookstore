@@ -1,0 +1,33 @@
+@include breakpoint-min(1000px) {
+  .card {
+    align-items: flex-start;
+    flex-direction: column;
+
+    >div {
+      width: auto;
+
+      &:nth-child(2) {
+        width: 50%;
+      }
+    }
+  }
+
+  .part1 {
+    h1 {
+      font-size: 6.5vw;
+    }
+
+    p {
+      font-size: 4vw;
+    }
+
+    .part3 {
+      font-size: 3vw;
+
+      button {
+        width: 100%;
+        padding: 8%;
+      }
+    }
+  }
+}
