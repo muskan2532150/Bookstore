@@ -5,7 +5,6 @@ import BookForm from './BookForm';
 export default function Books() {
   return (
     <div className="container">
-      {' '}
       <BookContainer />
       <BookForm />
     </div>

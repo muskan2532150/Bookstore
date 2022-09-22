@@ -1,8 +1,10 @@
 .inputBook {
   padding: 3% 0;
+  width: 80vw;
 
   hr {
     margin-bottom: 3%;
+    width: inherit;
   }
 
   h4 {
@@ -15,7 +17,8 @@
     align-items: center;
     margin-top: 20px;
     display: flex;
-    gap: 35px;
+    gap: 7%;
+    width: inherit;
 
     input {
       border-radius: 4px;

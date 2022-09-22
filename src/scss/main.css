@@ -6,14 +6,17 @@
 }
 
 body {
-  padding: 4%;
+  padding: 4% 0;
   background-color: #f5f6fa;
+  width: 100%;
 }
 
 #root {
   border-radius: 4px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
+  width: 90vw;
+  margin: auto;
 }
 
 nav {
@@ -22,27 +25,25 @@ nav {
   padding: 24px 4%;
   background-color: #fff;
   border-bottom: 1px solid #e8e8e8;
+  width: inherit;
+  padding-right: 0;
 }
-
 nav h1 {
   color: #0290ff;
   font-size: 3rem;
 }
-
 nav ul {
   display: flex;
   list-style: none;
   gap: 20px;
-  width: 20%;
+  width: 50%;
   padding-left: 12px;
   font-size: 2rem;
 }
-
 nav ul a {
   text-decoration: none;
   opacity: 0.5;
 }
-
 nav ul a:active {
   opacity: 1;
 }
@@ -58,19 +59,23 @@ button {
   color: #fff;
   font-weight: 700;
   font-size: 1.2rem;
+  display: inline-block;
 }
 
 .container {
   padding: 4%;
+  width: inherit;
 }
 
 .card {
   background-color: #fff;
+  width: 80vw;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
   padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-right: 0;
 }
 
 .part1 p {
@@ -80,11 +85,9 @@ button {
 .part3 p {
   margin-bottom: 7px;
 }
-
 .part3 p:first-child {
   opacity: 0.7;
 }
-
 .part3 button {
   margin-top: 10px;
   width: 44%;
@@ -95,7 +98,6 @@ button {
   display: flex;
   margin-top: 12px;
 }
-
 .buttons button {
   background: transparent;
   border: 0;
@@ -108,7 +110,6 @@ button {
   text-align: left;
   text-transform: uppercase;
 }
-
 .buttons button:last-child {
   border: 0;
 }
@@ -119,15 +120,12 @@ button {
   gap: 10px;
   align-items: center;
 }
-
 .part2 .text {
   text-align: center;
 }
-
 .part2 .text p {
   font-size: 2rem;
 }
-
 .part2 .text p:last-child {
   font-size: 1rem;
   opacity: 0.7;
@@ -144,25 +142,24 @@ button {
 
 .inputBook {
   padding: 3% 0;
+  width: 80vw;
 }
-
 .inputBook hr {
   margin-bottom: 3%;
+  width: inherit;
 }
-
 .inputBook h4 {
   opacity: 0.5;
   font-weight: 800;
   font-size: 1.6rem;
 }
-
 .inputBook form {
   align-items: center;
   margin-top: 20px;
   display: flex;
-  gap: 35px;
+  gap: 7%;
+  width: inherit;
 }
-
 .inputBook form input {
   border-radius: 4px;
   padding: 12px;
@@ -172,29 +169,38 @@ button {
   width: 20%;
   font-size: 1.2rem;
 }
-
 .inputBook form input::-moz-placeholder {
   opacity: 0.5;
   font-size: 1.2rem;
 }
-
 .inputBook form input:-ms-input-placeholder {
   opacity: 0.5;
   font-size: 1.2rem;
 }
-
 .inputBook form input::placeholder {
   opacity: 0.5;
   font-size: 1.2rem;
 }
-
 .inputBook form select {
   opacity: 0.8;
   width: 20%;
   padding: 12px;
 }
-
 .inputBook form select option {
   opacity: 0.9;
   padding: 12px;
 }
+
+.catText {
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: 0.67em;
+          margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+          margin-block-end: 0.67em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */
