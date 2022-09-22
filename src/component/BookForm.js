@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import { addState } from '../redux/books/book';
 
@@ -18,7 +19,7 @@ export default function BookForm() {
   const handleForm = (e) => {
     e.preventDefault();
     const newobj = {
-      id: 4,
+      id: uuidv4(),
       author: input.author,
       title: input.title,
       category: input.category,

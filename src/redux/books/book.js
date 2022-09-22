@@ -1,21 +1,22 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuidv4 } from 'uuid';
 
 export const counterSlice = createSlice({
   name: 'book',
   initialState: [{
-    id: 1,
+    id: uuidv4(),
     author: 'Suzzane Collins',
     title: 'The Hunger Game',
     category: 'Action',
   },
   {
-    id: 2,
+    id: uuidv4(),
     author: 'Frank Herbert',
     title: 'Dune',
     category: 'Science Fiction',
   },
   {
-    id: 3,
+    id: uuidv4(),
     author: 'Suzzane Collins',
     title: 'Capital in the Twenty-First Century',
     category: 'Economy',
