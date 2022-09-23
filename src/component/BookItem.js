@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteState } from '../redux/books/bookApi';
-// import {removeBook } from '../redux/books/bookApi';
+import { removeBook } from '../redux/books/bookApi';
 
 //  import PropTypes from 'prop-types';
 
@@ -20,7 +19,7 @@ const BookItem = ({ book }) => {
         <p>{book.author}</p>
         <div className="buttons">
           <button type="button">comments</button>
-          <button type="button" onClick={() => dispatch(deleteState(data.indexOf(book)))}>Delete</button>
+          <button type="button" onClick={() => dispatch(removeBook(book.id, data.indexOf(book)))}>Delete</button>
           <button type="button">Edit</button>
         </div>
       </div>

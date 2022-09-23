@@ -82,12 +82,6 @@ export function postBook(id, name, author, category) {
           'Content-type': 'application/json; charset=UTF-8',
         },
       });
-      dispatch(addState({
-        id,
-        category,
-        title: name,
-        author,
-      }));
       dispatch(setStatus(STATUSES.IDLE));
     } catch (error) {
       dispatch(setStatus(STATUSES.ERROR));
@@ -95,7 +89,7 @@ export function postBook(id, name, author, category) {
   };
 }
 
-export function removeBook(id) {
+export function removeBook(id, index) {
   return async function removeBookThunk(dispatch) {
     dispatch(setStatus(STATUSES.LOADING));
     try {
@@ -106,7 +100,7 @@ export function removeBook(id) {
             'Content-type': 'application/json; charset=UTF-8',
           },
         });
-      dispatch(fetchBook());
+      dispatch(deleteState(index));
       dispatch(setStatus(STATUSES.IDLE));
     } catch (error) {
       dispatch(setStatus(STATUSES.ERROR));
