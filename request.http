@@ -1,6 +1,7 @@
 POST https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/
 
 ####
- https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/8FX9ljRGwzM3mmUyf3xg/books
+ https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/sw3jWjnLEk0bR8XrWaMv/books
 
- 
+####
+DELETE https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/sw3jWjnLEk0bR8XrWaMv/books/63cdb140-35b9-4b84-9527-6224d8e05e4e;

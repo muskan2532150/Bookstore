@@ -8,7 +8,7 @@ const URL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstor
 const STATUSES = Object.freeze({
   IDLE: 'idle',
   ERROR: 'error',
-  LOADING: 'oading',
+  LOADING: 'loading',
 });
 
 export const bookSlice = createSlice({
@@ -96,6 +96,9 @@ export function removeBook(id, index) {
       await fetch(`${URL}/apps/${urlId}/books/${id}`,
         {
           method: 'DELETE',
+          body: JSON.stringify({
+            item_id: `${id}`,
+          }),
           headers: {
             'Content-type': 'application/json; charset=UTF-8',
           },

@@ -23,7 +23,7 @@ export default function BookForm() {
     const author = document.querySelector('#author').value;
     const category = document.querySelector('#category').value;
     const newobj = {
-      id: uuidv4(),
+      id,
       author: input.author,
       title: input.title,
       category: input.category,
