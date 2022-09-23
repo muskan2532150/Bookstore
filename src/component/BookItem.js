@@ -1,14 +1,16 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
-import { useDispatch } from 'react-redux';
-import { deleteState } from '../redux/books/book';
+import { useDispatch, useSelector } from 'react-redux';
+import { deleteState } from '../redux/books/bookApi';
+// import {removeBook } from '../redux/books/bookApi';
 
 //  import PropTypes from 'prop-types';
 
 // destructuring props as book using {book}
 
 const BookItem = ({ book }) => {
+  const { data } = useSelector((state) => state.bookApi);
   const dispatch = useDispatch();
   return (
     <div className="card">
@@ -18,7 +20,7 @@ const BookItem = ({ book }) => {
         <p>{book.author}</p>
         <div className="buttons">
           <button type="button">comments</button>
-          <button type="button" onClick={() => dispatch(deleteState(book.id))}>Delete</button>
+          <button type="button" onClick={() => dispatch(deleteState(data.indexOf(book)))}>Delete</button>
           <button type="button">Edit</button>
         </div>
       </div>
