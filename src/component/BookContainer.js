@@ -7,6 +7,7 @@ export default function BookContainer() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchBook());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const { data: value } = useSelector((state) => state.bookApi);
   return (
